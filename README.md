@@ -13,6 +13,14 @@ In this project I was tasked to recreate a simplified version of an Instagram pr
 
 ### Challenges Faced
 
-**Gap spacing in the grid**: In the first and the lost row of my grid my images were spaced out but in the middle rows there was no space between them.
+**Gap spacing in the grid**: In the first and the last row of my grid my images were spaced out but in the middle rows there was no space between them.
 The space between the rows were also huge.
+
+### Areas for Improvement 
+
+**Advanced CSS properties**: I want to revist fitting images into a grid and recieve help with where I am going wrong.
+
+### Overall Learning Experience
+
+This project helped me realize that I really have to focus more on my struggle areas in CSS as it was a big part in this project and will most likely be a big part of future projects.
 
