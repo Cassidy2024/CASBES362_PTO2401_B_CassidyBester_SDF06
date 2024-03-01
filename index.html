@@ -1,0 +1,410 @@
+<!-- Inspired by George Park: https://codepen.io/GeorgePark/pen/VXrwOP -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSpace Pets Instagram 😺</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        :root {
+        font-size: 10px;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Open Sans", Arial, sans-serif;
+        min-height: 100vh;
+        background-color: white;
+        color: #262626;
+        padding-bottom: 3rem;
+    }
+ 
+    img {
+        display: block;
+    }
+	 .profile-stats {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	.profile-image{
+		margin-left: 20px;
+	}
+    
+    .profile-stats {
+        border: none;
+       display: flex;
+       flex-wrap: nowrap;
+       flex-direction: row;
+       justify-content: flex-end;
+    
+    }
+
+    .profile-real-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-stat-count , .profile-image > div {
+        display: flex;
+        flex-direction: row;
+    }
+    
+	.gallery  {
+		display: grid;
+		grid-template-columns: 600px 600px 600px;
+		grid-template-rows: 100% 100% 100% 100% 100%;
+		gap: 20px;
+			
+	}
+
+	.grid-item:{
+		padding: 10px;
+		margin: 5px;
+	}
+	
+	.image {
+		height: 100%;
+		width: 100%;
+		object-fit:cover;
+	 }
+	 
+	 .image-resize {
+    height: 600px;
+	object-fit: cover;
+    object-position: center;
+	
+}
+
+	 .btn {
+		width: 25%;
+		display: inline-block;
+		text-align: center;
+
+	 }
+
+	 .profile-settings-btn{
+		width: 10%;
+	 }
+	 ul {
+		display:flex;
+		flex-direction: row;
+		
+	 }
+	 li {
+		display: inline-block;
+		justify-content: space-between;
+		margin-right: 30px;
+	 }
+    
+    </style>
+
+
+
+<header>
+
+	<div class="container" id="beginning">
+
+		<div class="profile" id="item-1">
+            <h1 class="profile-user-name">codespace_pets</h1>
+
+			<div class="profile-image">
+
+				<img src="./images/cat-codespace.png" alt="">
+
+			</div>
+            <div class="profile-stats">
+
+				<ul id="stats">
+					<li><span class="profile-stat-count">549</span> posts</li>
+					<li><span class="profile-stat-count">45 682</span> followers</li>
+					<li><span class="profile-stat-count">1</span> following</li>
+				</ul>
+
+			</div>
+            
+        
+            
+			<div class="profile-bio">
+
+				<p><span class="profile-real-name">CodeSpace Pets 😺</span> The hangout place for the best pets 🐕🐇🐦</p>
+
+			</div>
+
+			<div class="profile-user-settings">
+
+				
+
+				<button class="btn profile-edit-btn">Edit Profile</button>
+
+				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fa fa-cog" aria-hidden="true"></i></button>
+
+			</div>
+
+
+			
+
+		</div>
+		<!-- End of profile section -->
+
+	</div>
+	<!-- End of container -->
+
+</header>
+
+<main>
+
+	<div class="container">
+
+		<div class="gallery">
+
+			<div class="gallery-item" tabindex="0" id="pic-1">
+
+				<img src="./images/bailey.PNG" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 56</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 2</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-2">
+
+				<ul>
+					<li><img src="./images/startlett.jpg" class="gallery-image image-resize" alt=""><li>
+					</ul>
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 89</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-3">
+
+				<img src="./images/mr-chomsky.png" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-type">
+
+					<span class="visually-hidden">Gallery</span><i class="fa fa-clone" aria-hidden="true"></i>
+
+				</div>
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 42</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 1</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-4">
+
+				<img src="./images/scarab.png" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-type">
+
+					<span class="visually-hidden">Video</span><i class="fa fa-video" aria-hidden="true"></i>
+
+				</div>
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 38</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 0</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-5">
+
+				<img src="./images/baronnashor.png" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-type">
+
+					<span class="visually-hidden">Gallery</span><i class="fa fa-clone" aria-hidden="true"></i>
+
+				</div>
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 47</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 1</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-6">
+
+				<img src="./images/gabrielle.jpg" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 94</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 3</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-7">
+
+				<img src="./images/jarrod.jpg" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-type">
+
+					<span class="visually-hidden">Gallery</span><i class="fa fa-clone" aria-hidden="true"></i>
+
+				</div>
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 52</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 4</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-8">
+
+				<img src="./images/mr_goose.jpg" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 66</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 2</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-9">
+
+				<img src="./images/dog-codespace.png" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-type">
+
+					<span class="visually-hidden">Gallery</span><i class="fa fa-clone" aria-hidden="true"></i>
+
+				</div>
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 45</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 0</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-10">
+
+				<img src="./images/forrest.jpg" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 34</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 1</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-11">
+
+				<img src="./images/louise.jpg" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 41</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 0</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="gallery-item" tabindex="0" id="pic-12">
+
+				<img src="./images/tired.jpg" class="gallery-image image-resize" alt="">
+
+				<div class="gallery-item-type">
+
+					<span class="visually-hidden">Video</span><i class="fa fa-video" aria-hidden="true"></i>
+
+				</div>
+
+				<div class="gallery-item-info">
+
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 30</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 2</li>
+					</ul>
+
+				</div>
+                   
+				   </div>
+			</div>
+
+		</div>
+		<!-- End of gallery -->
+
+		<div class="loader"></div>
+
+	</div>
+	<!-- End of container -->
+
+</main>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
